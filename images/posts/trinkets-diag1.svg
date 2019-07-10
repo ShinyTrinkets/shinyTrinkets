@@ -1,0 +1,33 @@
+<svg width="383" height="408" version="1.1" baseProfile="full" viewbox="0 0 383 408" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" style="font-weight:bold; font-size:12pt; font-family:'Calibri', Helvetica, sans-serif;stroke-width:3;stroke-linejoin:round;stroke-linecap:round"><text x="175" y="80" style="font-weight:normal;">input</text>
+<path d="M167 56.5 L126.3 91.5 L126.3 126.5 L126.3 126.5 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M122.5 117.2 L126.3 121.8 L130 117.2 L126.3 126.5 Z" style="stroke:#33322E;fill:#33322E;stroke-dasharray:none;"></path>
+<path d="M217 56.5 L257.8 91.5 L257.8 126.5 L257.8 126.5 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M254 117.2 L257.8 121.8 L261.5 117.2 L257.8 126.5 Z" style="stroke:#33322E;fill:#33322E;stroke-dasharray:none;"></path>
+<path d="M126.3 169.5 L126.3 204.5 L167 239.5 L167 239.5 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M157.5 236.2 L163.4 236.5 L162.3 230.6 L167 239.5 Z" style="stroke:#33322E;fill:#33322E;stroke-dasharray:none;"></path>
+<path d="M257.8 169.5 L257.8 204.5 L217 239.5 L217 239.5 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M221.7 230.6 L220.6 236.5 L226.5 236.2 L217 239.5 Z" style="stroke:#33322E;fill:#33322E;stroke-dasharray:none;"></path>
+<path d="M136.6 282.5 L46.5 317.5 L46.5 352.5 L46.5 352.5 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M42.8 343.2 L46.5 347.8 L50.2 343.2 L46.5 352.5 Z" style="stroke:#33322E;fill:#33322E;stroke-dasharray:none;"></path>
+<text x="200" y="315" style="font-weight:normal;">output</text>
+<path d="M192 282.5 L192 317.5 L192 352.5 L192 352.5 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M188.3 343.2 L192 347.8 L195.7 343.2 L192 352.5 Z" style="stroke:#33322E;fill:#33322E;stroke-dasharray:none;"></path>
+<path d="M247.4 282.5 L337.5 317.5 L337.5 352.5 L337.5 352.5 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M333.8 343.2 L337.5 347.8 L341.2 343.2 L337.5 352.5 Z" style="stroke:#33322E;fill:#33322E;stroke-dasharray:none;"></path>
+<rect x="130.5" y="245.5" height="31" width="124" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<text x="192.5" y="267" style="text-anchor:middle;">Trinkets⚙️</text>
+<circle r="4" cx="192" cy="17.5" style="stroke:#33f;fill:#eee8d5;stroke-dasharray:none;"></circle>
+<path d="M192 21.5 L192 29.5" style="stroke:#33f;fill:none;stroke-dasharray:none;"></path>
+<path d="M188 25.5 L196 25.5" style="stroke:#33f;fill:none;stroke-dasharray:none;"></path>
+<path d="M188 33.5 L192 29.5 L196 33.5" style="stroke:#33f;fill:none;stroke-dasharray:none;"></path>
+<text x="192.5" y="47" style="font-weight:normal;text-anchor:middle;">User</text>
+<rect x="230.5" y="132.5" height="31" width="54" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<text x="257.5" y="154" style="text-anchor:middle;">HTTP</text>
+<rect x="103.5" y="132.5" height="31" width="45" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<text x="126" y="154" style="text-anchor:middle;">CLI</text>
+<rect x="19.5" y="358.5" height="31" width="54" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<text x="46.5" y="380" style="text-anchor:middle;">logs</text>
+<rect x="155.5" y="358.5" height="31" width="73" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<text x="192" y="380" style="text-anchor:middle;">events</text>
+<rect x="310.5" y="358.5" height="31" width="54" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<text x="337.5" y="380" style="text-anchor:middle;">data</text></svg>
