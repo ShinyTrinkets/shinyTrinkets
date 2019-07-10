@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html{{ with .Site.LanguageCode }} lang="{{ . }}"{{ end }}>
+{{ partial "header" . }}
+<body>
+{{ partial "nav" . }}
+<div class="container">
+  <h2 class="subtitle is-6">{{ .Date.Format "2 January 2006" }}</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">{{ .Title }}</h1>
+  <div class="content">
+    {{ .Content }}
+  </div>
+</div>
+{{ partial "jsshare" . }}
+{{ partial "disqus" . }}
+{{ partial "footer" . }}
+<script type="text/javascript">
+  $('.collapse.expand').click(function(){
+    $('.collapsible.expandable').slideToggle('slow')
+  });
+</script>
+</body>
+</html>
