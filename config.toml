@@ -1,4 +1,4 @@
-baseURL = "https://blog.trinkets.tech/"
+baseURL = "https://trinkets.tech"
 languageCode = "en"
 title = "Trinkets blog and docs"
 description = "Trinkets blog and docs"
@@ -8,7 +8,7 @@ paginate = 5
 
 [author]
   name = "CroQ"
-  homepage = "https://github.com/croqaz/"
+  url = "https://github.com/croqaz/"
 
 [params.highlight]
   style = "zenburn"
