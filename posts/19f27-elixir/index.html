@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Elixir v1.9 🧪 | Trinkets blog and docs</title>
+
+<link rel="stylesheet" href="https://trinkets.tech/css/styles.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" crossorigin="anonymous">
+<script src="http://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.0/styles/zenburn.min.css" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.0/highlight.min.js" crossorigin="anonymous"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+</head>
+
+<body>
+<div class="container">
+  <nav class="navbar level">
+    <div class="navbar-brand">
+        <a class="nav-item" href="https://trinkets.tech"><h1 class="title is-3">Trinkets blog and docs</h1></a>
+    </div>
+    <div class="navbar-menu has-text-centered is-active">
+        <div class="navbar-end is-centered">
+            
+              <a href="https://trinkets.tech/about" rel="me">
+                <span class="icon">
+                  <i class="fas fa-info"></i>
+                </span>
+              </a>
+            
+              <a href="https://github.com/ShinyTrinkets/" rel="me">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+              </a>
+            
+              <a href="https://gitlab.com/ShinyTrinkets/" rel="me">
+                <span class="icon">
+                  <i class="fab fa-gitlab"></i>
+                </span>
+              </a>
+            
+              <a href="https://reddit.com/r/ShinyTrinkets/" rel="me">
+                <span class="icon">
+                  <i class="fab fa-reddit"></i>
+                </span>
+              </a>
+            
+         </div>
+    </div>
+  </nav>
+</div>
+
+<div class="container">
+  <h2 class="subtitle is-6">27 June 2019</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">Elixir v1.9 🧪</h1>
+  <div class="content">
+    <p>I was really really silent (publicly), for such a long time, wow&hellip;</p>
+
+<p>I was quite busy actually, on all the projects. More details will follow.</p>
+
+<p>What I wanted to write today is: WOOOW, <a href="https://elixir-lang.org">Elixir-lang</a> implemented &ldquo;build release&rdquo; in their latest version !!</p>
+
+<p>The official blog post: <a href="https://elixir-lang.org/blog/2019/06/24/elixir-v1-9-0-released/">Elixir v1-9-0 released</a>. TL;DR; from the article:</p>
+
+<blockquote>
+<p>Releases allow developers to precompile and package all of their code and the runtime into a single unit.<br/>
+A release is a self-contained directory that consists of your application code, all of its dependencies, plus the whole Erlang Virtual Machine (VM) and runtime.<br/>
+Code preloading, configuration and customisation, Self-contained, multiple releases, management scripts&hellip;</p>
+</blockquote>
+
+<p>I made a small test with a basic &ldquo;Hello world&rdquo; app in Elixir 1.9. After that, I executed:<br/>
+<code>$ MIX_ENV=prod mix release</code></p>
+
+<p>In the folder &ldquo;_build/prod/rel/&ldquo;, the production app is only <strong>8MB</strong> !! 😱</p>
+
+<p>I uninstalled Elixir and Erlang after compiling the app and I executed:<br/>
+<code>$ _build/prod/rel/kv/bin/kv version</code> and some commands to run the &ldquo;hello&rdquo; function and it worked perfectly. That&rsquo;s why I&rsquo;m so excited about it!</p>
+
+<p>Because one of the most important reasons I stopped using <a href="https://elixir-lang.org">Elixir</a> a few years ago, was that I couldn&rsquo;t find any way to export my app in a portable way, like they just implemented. And the smallest container with Elixir was a few hundred MB. Well, the second reason was the ecosystem was too small, so I had to write a lot of code just to make simple automation stuff, so I switched to Python.</p>
+
+<p>Many things have happened since then&hellip; But I don&rsquo;t regret my decision, now that I&rsquo;m using Go-lang.<br/>
+Even if Go syntax is horrible and Elixir syntax is <em>for sure</em>, the most beautiful thing you could possible write, as a programmer. In my opinion.</p>
+
+  </div>
+</div>
+<div class="container has-text-centered">
+  
+</div>
+
+<div class="container has-text-centered">
+
+</div>
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://github.com/ShinyTrinkets/">Shiny-Trinkets</a> 2018-2019</p>
+  </div>
+</section>
+
+
+<script type="text/javascript">
+  $('.collapse.expand').click(function(){
+    $('.collapsible.expandable').slideToggle('slow')
+  });
+</script>
+</body>
+</html>

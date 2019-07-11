@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Trinkets blog and docs</title>
+    <link>https://trinkets.tech/posts/</link>
+    <description>Recent content in Posts on Trinkets blog and docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/ShinyTrinkets/&#34;&gt;Shiny-Trinkets&lt;/a&gt; 2018-2019</copyright>
+    <lastBuildDate>Wed, 03 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://trinkets.tech/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>High level diagrams 🔩</title>
+      <link>https://trinkets.tech/posts/19g03-diagram/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://trinkets.tech/posts/19g03-diagram/</guid>
+      <description>Procrastination and delay are both forms of lazyness. I&amp;rsquo;m fighting my own laziness daily. Sometimes I actually win&amp;hellip;
+In one of my previous posts I promised to publish some diagrams of the Trinkets architecture.
+What I care about at the highest level is the data flow. Inputs and Outputs. All the implementation details are intentionally ignored, so Trinkets is just a &amp;ldquo;black box&amp;rdquo; that you can interact with.
+A User can interact with Trinkets via command line, or via a browser user interface.</description>
+    </item>
+    
+    <item>
+      <title>Decentralized technologies Ⓟ2Ⓟ</title>
+      <link>https://trinkets.tech/posts/19g02-decentralized/</link>
+      <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://trinkets.tech/posts/19g02-decentralized/</guid>
+      <description>I believe decentralized applications are very important and I&amp;rsquo;m not the only one to think that. I&amp;rsquo;ve been watching the P2P and crypto space for years. For me personally, decentralization technologies =equal= freedom. Freedom to choose where you send your data and where you store it. Because if there are no &amp;ldquo;cloud&amp;rdquo; servers, you are in control.
+I want to use P2P network protocols for the Trinkets suite, because there won&amp;rsquo;t be any servers.</description>
+    </item>
+    
+    <item>
+      <title>Start of July 2019 updates ⚙️</title>
+      <link>https://trinkets.tech/posts/19g01-updates/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://trinkets.tech/posts/19g01-updates/</guid>
+      <description>I believe the Overseer project is quite stable now, I put a lot of effort into making it better. I had to re-write a lot of the code, because when I started working at it, my Go-lang skills were horrible. I created a lot of tests, the coverage is ~94% now. Of course, that doesn&amp;rsquo;t mean there are no bugs, but at least it&amp;rsquo;s a good measure of how well the tests are hitting the code.</description>
+    </item>
+    
+    <item>
+      <title>Elixir v1.9 🧪</title>
+      <link>https://trinkets.tech/posts/19f27-elixir/</link>
+      <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://trinkets.tech/posts/19f27-elixir/</guid>
+      <description>I was really really silent (publicly), for such a long time, wow&amp;hellip;
+I was quite busy actually, on all the projects. More details will follow.
+What I wanted to write today is: WOOOW, Elixir-lang implemented &amp;ldquo;build release&amp;rdquo; in their latest version !!
+The official blog post: Elixir v1-9-0 released. TL;DR; from the article:
+ Releases allow developers to precompile and package all of their code and the runtime into a single unit.</description>
+    </item>
+    
+    <item>
+      <title>New job at ScrapingHub 🕸</title>
+      <link>https://trinkets.tech/posts/18k22-scrapinghub/</link>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trinkets.tech/posts/18k22-scrapinghub/</guid>
+      <description>I just started a new job at ScrapingHub and I&amp;rsquo;m really excited about it 😁
+But at the same time, this means I&amp;rsquo;ll have to delay my work on these projects a little longer, until I get used to the new tools and projects.</description>
+    </item>
+    
+    <item>
+      <title>TwoFold WIP ✂︎</title>
+      <link>https://trinkets.tech/posts/18j07-twofold/</link>
+      <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trinkets.tech/posts/18j07-twofold/</guid>
+      <description>Not too much progress with TwoFold (2✂︎f) these days&amp;hellip;
+I discovered Nearley.js and I think it might solve my parsing dilemma.
+Unfortunately, I have to work on some personal things these weeks, so I don&amp;rsquo;t think I&amp;rsquo;ll make any progress this month 😢</description>
+    </item>
+    
+    <item>
+      <title>TwoFold WIP ✂︎</title>
+      <link>https://trinkets.tech/posts/18i27-twofold/</link>
+      <pubDate>Sat, 29 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trinkets.tech/posts/18i27-twofold/</guid>
+      <description>Wow man, where has this week gone ?! It&amp;rsquo;s already Thursday&amp;hellip;
+I&amp;rsquo;m still working on TwoFold (2✂︎f) v0.2, because v0.1 is not that usable and friendly&amp;hellip;
+I added the option to define you own tag start and end characters to create fancy tags like {{ whatever ? }}, or double tags like [[ whatever &amp;gt;]] ... [[&amp;lt; whatever ]].
+I&amp;rsquo;m passing the parameters that could come from the tags, into the transformer functions.</description>
+    </item>
+    
+    <item>
+      <title>TwoFold v0.1 🚀 ✂︎</title>
+      <link>https://trinkets.tech/posts/18i22-twofold/</link>
+      <pubDate>Sat, 22 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trinkets.tech/posts/18i22-twofold/</guid>
+      <description>I just launched TwoFold (2✂︎f) v0.1 on NPM !! 🎉
+No. 1 reason I created TwoFold is &amp;hellip; to sort lines in my awesome lists 😂 And no. 2 is to fetch the Github or Gitlab status for those projects in the awesome lists. That&amp;rsquo;s what I want to do ASAP, but I want it done properly, so I&amp;rsquo;m taking the time.
+I have huge hopes for this library, but there&amp;rsquo;s so much to do&amp;hellip; v0.</description>
+    </item>
+    
+    <item>
+      <title>The history of Trinkets ⭐️ ⚙️</title>
+      <link>https://trinkets.tech/posts/18i18-history/</link>
+      <pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trinkets.tech/posts/18i18-history/</guid>
+      <description>Let&amp;rsquo;s start with the beggining: what&amp;rsquo;s the focus of the Trinkets applications, when and where did this idea start and why this is still relevant today. I&amp;rsquo;ll talk about the &amp;ldquo;how&amp;rdquo; another time.
+In 2008, I was working in a data processing company and I noticed that I was repeatedly doing the same things every X intervals of time. Depending on the client, some tasks were daily, others weekly, others monthly.</description>
+    </item>
+    
+    <item>
+      <title>What is Trinkets ⭐️ ⚙️</title>
+      <link>https://trinkets.tech/posts/18h15-what-is-trinkets/</link>
+      <pubDate>Wed, 15 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trinkets.tech/posts/18h15-what-is-trinkets/</guid>
+      <description>It&amp;rsquo;s time to explain the purpose of Trinkets and why it exists.
+Some of the things are not yet crystal clear in my mind, so it might take some time to put them in writing and I might come back to edit this text in the future.
+I&amp;rsquo;m using a Github repository and not a normal blog post, both because I&amp;rsquo;m lazy and because this is how I&amp;rsquo;ve worked for years, anyway.</description>
+    </item>
+    
+    <item>
+      <title>Hello world ☀️ 👋</title>
+      <link>https://trinkets.tech/posts/18g30-hello-world/</link>
+      <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trinkets.tech/posts/18g30-hello-world/</guid>
+      <description>This is my first ever public post regarding the Trinkets projects! Wheee ⭐️ 🎉 !!
+I&amp;rsquo;ll take the time to explain what this Github Organization is about, why I created it.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Start of July 2019 updates ⚙️ | Trinkets blog and docs</title>
+
+<link rel="stylesheet" href="https://trinkets.tech/css/styles.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" crossorigin="anonymous">
+<script src="http://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.0/styles/zenburn.min.css" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.0/highlight.min.js" crossorigin="anonymous"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+</head>
+
+<body>
+<div class="container">
+  <nav class="navbar level">
+    <div class="navbar-brand">
+        <a class="nav-item" href="https://trinkets.tech"><h1 class="title is-3">Trinkets blog and docs</h1></a>
+    </div>
+    <div class="navbar-menu has-text-centered is-active">
+        <div class="navbar-end is-centered">
+            
+              <a href="https://trinkets.tech/about" rel="me">
+                <span class="icon">
+                  <i class="fas fa-info"></i>
+                </span>
+              </a>
+            
+              <a href="https://github.com/ShinyTrinkets/" rel="me">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+              </a>
+            
+              <a href="https://gitlab.com/ShinyTrinkets/" rel="me">
+                <span class="icon">
+                  <i class="fab fa-gitlab"></i>
+                </span>
+              </a>
+            
+              <a href="https://reddit.com/r/ShinyTrinkets/" rel="me">
+                <span class="icon">
+                  <i class="fab fa-reddit"></i>
+                </span>
+              </a>
+            
+         </div>
+    </div>
+  </nav>
+</div>
+
+<div class="container">
+  <h2 class="subtitle is-6">1 July 2019</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">Start of July 2019 updates ⚙️</h1>
+  <div class="content">
+    <p>I believe the <a href="https://github.com/ShinyTrinkets/overseer">Overseer</a> project is quite stable now, I put a lot of effort into making it better. I had to re-write a lot of the code, because when I started working at it, my Go-lang skills were horrible.<br/>
+I created a lot of tests, the coverage is <a href="https://codecov.io/gh/ShinyTrinkets/overseer">~94%</a> now. Of course, that doesn&rsquo;t mean there are no bugs, but at least it&rsquo;s a good measure of how well the tests are hitting the code.<br/>
+Overseer is very important, because it&rsquo;s the core of dealing with other processes, so it needs to be rock solid.</p>
+
+<p>The next step for <a href="https://github.com/ShinyTrinkets/overseer">Overseer</a> will be to organise the code a little better.<br/>
+I asked the creator of <a href="https://github.com/go-cmd">go-Cmd</a> (a very important dependency for Overseer) to let me maintain his library and he agreed. This will force me to deal with real people, actual issues in this code and to learn how to maintain a code that is not written by me.<br/>
+But the most important is to give back to the community. I didn&rsquo;t have to do this, but I thought it&rsquo;s a nice thing to to and go-Cmd has a lot of potential.<br/>
+If I&rsquo;ll have enough features in go-Cmd to remove the Cmd struct and logic from the Overseer, that will make me very happy.<br/>
+If not, I&rsquo;ll just keep my own version of go-Cmd and I&rsquo;ll be happy anyway.</p>
+
+<p>I also started thinking how to parse the infamous custom tags for <a href="https://github.com/ShinyTrinkets/twofold.js">TwoFold (2✂︎f)</a>. I don&rsquo;t think I&rsquo;ll be using <a href="https://nearley.js.org/">Nearley</a>, or any other JS library for parsing the tags. But&hellip; I never say never.</p>
+
+<p>I also started another project that I think might be a part of Trinkets: <a href="https://github.com/croqaz/text-db">text-DB</a>. This might be the Database I could use to save the events and/or the Data generated from the scripts running with <a href="https://github.com/ShinyTrinkets/spinal">Spinal 🌀</a>.<br/>
+It will not be good enough for large scale data, but it should easily handle a few millions of records. I tested it with 4 millions and they are loaded in 60 seconds on my Macbook Air.<br/>
+I don&rsquo;t worry too much. This can be optimised by a lot. I just need to be flexible with the implementation.</p>
+
+<p>I have a pretty good idea about the architecture of the Spinal app. I drew a few schemas. I feel a little lazy to convert them in digital format, because I know how hard it is to find a nice app to draw this kind of stuff&hellip; But I have to do this eventually 😅</p>
+
+  </div>
+</div>
+<div class="container has-text-centered">
+  
+</div>
+
+<div class="container has-text-centered">
+
+</div>
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://github.com/ShinyTrinkets/">Shiny-Trinkets</a> 2018-2019</p>
+  </div>
+</section>
+
+
+<script type="text/javascript">
+  $('.collapse.expand').click(function(){
+    $('.collapsible.expandable').slideToggle('slow')
+  });
+</script>
+</body>
+</html>

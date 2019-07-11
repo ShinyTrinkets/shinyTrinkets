@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>High level diagrams 🔩 | Trinkets blog and docs</title>
+
+<link rel="stylesheet" href="https://trinkets.tech/css/styles.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" crossorigin="anonymous">
+<script src="http://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.0/styles/zenburn.min.css" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.0/highlight.min.js" crossorigin="anonymous"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+</head>
+
+<body>
+<div class="container">
+  <nav class="navbar level">
+    <div class="navbar-brand">
+        <a class="nav-item" href="https://trinkets.tech"><h1 class="title is-3">Trinkets blog and docs</h1></a>
+    </div>
+    <div class="navbar-menu has-text-centered is-active">
+        <div class="navbar-end is-centered">
+            
+              <a href="https://trinkets.tech/about" rel="me">
+                <span class="icon">
+                  <i class="fas fa-info"></i>
+                </span>
+              </a>
+            
+              <a href="https://github.com/ShinyTrinkets/" rel="me">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+              </a>
+            
+              <a href="https://gitlab.com/ShinyTrinkets/" rel="me">
+                <span class="icon">
+                  <i class="fab fa-gitlab"></i>
+                </span>
+              </a>
+            
+              <a href="https://reddit.com/r/ShinyTrinkets/" rel="me">
+                <span class="icon">
+                  <i class="fab fa-reddit"></i>
+                </span>
+              </a>
+            
+         </div>
+    </div>
+  </nav>
+</div>
+
+<div class="container">
+  <h2 class="subtitle is-6">3 July 2019</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">High level diagrams 🔩</h1>
+  <div class="content">
+    <p>Procrastination and delay are both forms of lazyness.
+I&rsquo;m fighting my own laziness daily.<br/>
+Sometimes I actually win&hellip;</p>
+
+<p>In one of my previous posts I promised to publish some diagrams of the Trinkets architecture.</p>
+
+<p>What I care about at the highest level is the data flow. Inputs and Outputs.
+All the implementation details are intentionally ignored, so Trinkets is just a &ldquo;black box&rdquo; that you can interact with.</p>
+
+<p>A User can interact with Trinkets via command line, or via a browser user interface.
+For every interaction, the User will see a log, an event and/or some data being generated as a response.<br/></p>
+
+<p><img src="/images/posts/trinkets-diag1.svg" alt="Diagram 1" /></p>
+
+<a class="button collapse expand">
+  <i class="fas fa-caret-down"></i>&nbsp;
+View diagram 1 source
+</a>
+
+
+<div class="collapsible expandable" style="display:none">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-nomnoml" data-lang="nomnoml">#spacing: 70
+#edgeMargin: 6
+#arrowSize: 0.4
+#.actor: visual=actor stroke=#33f
+
+[&lt;actor&gt;User] input-&gt; [CLI]
+[User] -&gt; [HTTP]
+[CLI] -&gt; [Trinkets⚙️]
+[HTTP] -&gt; [Trinkets⚙️]
+
+[Trinkets⚙️] -&gt; [logs]
+[Trinkets⚙️] output-&gt; [events]
+[Trinkets⚙️] -&gt; [data]</code></pre></div>
+</div>
+
+
+<p><img src="/images/posts/trinkets-diag2.svg" alt="Diagram 2" /><br/></p>
+
+<a class="button collapse expand">
+  <i class="fas fa-caret-down"></i>&nbsp;
+View diagram 2 source
+</a>
+
+
+<p><div class="collapsible expandable" style="display:none">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-nomnoml" data-lang="nomnoml">#spacing: 40
+#edgeMargin: 5
+#arrowSize: 0.5
+#.cmd: visual=roundrect fill=#c0ffee
+#.actor: visual=actor stroke=#33f
+
+[&lt;frame&gt;Overseer|
+ [Overseer] --&gt; [cmd#1]
+ [Overseer] --&gt; [cmd#2]
+ [Overseer] --&gt; [cmd#3]
+]
+
+[&lt;actor&gt;User] input-&gt; [&lt;sender&gt;HTTP]
+[&lt;actor&gt;User] -&gt; [&lt;sender&gt;CLI]
+
+[HTTP] -&gt; [HTTP server]
+[CLI] -&gt; [&lt;cmd&gt;Command]
+
+[Command] &lt;- [Parser]
+[Command] &lt;- [Config]
+[Command] -&gt; [Overseer]
+[Command] -&gt; [HTTP server]
+[Command] -&gt; [State]
+
+[Overseer] -&gt; [State]
+[State] --&gt; [events]
+
+[HTTP server] --&gt; [logs]
+[Overseer] --&gt; [logs]
+[Overseer] output--&gt; [data]</code></pre></div>
+</div>
+
+<br/></p>
+
+<p>And this is the list of the components and their role:</p>
+
+<ul>
+<li>Command (manager, glue) - used by cmd line at startup to register all the scripts;
+its role is to join together some of the other components like Overseer with the State and the RPC with the State</li>
+<li>Config (r&amp;w) - reads and writes global configs (JSON and YAML)</li>
+<li>Parser - used by the Manager to parse files and folders and send the procs to the Overseer</li>
+<li>Overseer (process manager) - used by the Manager and the HTTP server to control processes</li>
+<li>Events (flux) - syns things happening within the system to the state, and glue events together</li>
+<li>State (tree) - a view of the source files, procs and sub-procs for the user to see as raw JSON, or maybe in a GUI</li>
+<li>HTTP server - for the user to read the state and to remote control procs (stop, start)</li>
+<li>Database (data) - used for saving stats about source files, procs, sub-procs, also for storing vars and logs?</li>
+</ul>
+
+  </div>
+</div>
+<div class="container has-text-centered">
+  
+</div>
+
+<div class="container has-text-centered">
+
+</div>
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://github.com/ShinyTrinkets/">Shiny-Trinkets</a> 2018-2019</p>
+  </div>
+</section>
+
+
+<script type="text/javascript">
+  $('.collapse.expand').click(function(){
+    $('.collapsible.expandable').slideToggle('slow')
+  });
+</script>
+</body>
+</html>

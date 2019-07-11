@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>The history of Trinkets ⭐️ ⚙️ | Trinkets blog and docs</title>
+
+<link rel="stylesheet" href="https://trinkets.tech/css/styles.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" crossorigin="anonymous">
+<script src="http://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.0/styles/zenburn.min.css" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.0/highlight.min.js" crossorigin="anonymous"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+</head>
+
+<body>
+<div class="container">
+  <nav class="navbar level">
+    <div class="navbar-brand">
+        <a class="nav-item" href="https://trinkets.tech"><h1 class="title is-3">Trinkets blog and docs</h1></a>
+    </div>
+    <div class="navbar-menu has-text-centered is-active">
+        <div class="navbar-end is-centered">
+            
+              <a href="https://trinkets.tech/about" rel="me">
+                <span class="icon">
+                  <i class="fas fa-info"></i>
+                </span>
+              </a>
+            
+              <a href="https://github.com/ShinyTrinkets/" rel="me">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+              </a>
+            
+              <a href="https://gitlab.com/ShinyTrinkets/" rel="me">
+                <span class="icon">
+                  <i class="fab fa-gitlab"></i>
+                </span>
+              </a>
+            
+              <a href="https://reddit.com/r/ShinyTrinkets/" rel="me">
+                <span class="icon">
+                  <i class="fab fa-reddit"></i>
+                </span>
+              </a>
+            
+         </div>
+    </div>
+  </nav>
+</div>
+
+<div class="container">
+  <h2 class="subtitle is-6">18 September 2018</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">The history of Trinkets ⭐️ ⚙️</h1>
+  <div class="content">
+    <p>Let&rsquo;s start with the beggining: what&rsquo;s the focus of the <strong>Trinkets</strong> applications, when and where did this idea start and why this is still relevant today. I&rsquo;ll talk about the &ldquo;how&rdquo; another time.</p>
+
+<p>In 2008, I was working in a data processing company and I noticed that I was repeatedly doing the same things every X intervals of time. Depending on the client, some tasks were daily, others weekly, others monthly. And with some exceptions, when humans weren&rsquo;t respecting the procedures, the flow was exactly the same: get the data as ZIP/RAR from somewhere, extract it, make some preparation of the data, run some commands that convert the data to invoices/letters, compress the result, generate some reports of the input and output numbers and upload the results somewhere, or send an e-mail.</p>
+
+<p>I also noticed that when I was doing all this stuff manually, I was forgetting some details about that particular job, or I got interrupted and I was making mistakes. And after some time, this became incredibly boring and I was going crazy.</p>
+
+<p>So I started first by automating the beggining of the process, and then, some parts from the end. And before I left the company, I had a really good automation flow, all written in Python.</p>
+
+<p>But while I was doing all that, I wasn&rsquo;t focused on fixing just the little problems I had at work, I was thinking about a more general application. Something that I can use at home, something that my wife would use to convert her jewelry photos and automatically upload them on her website, or something to syncronize my different documents in different places, but even more general than that&hellip; I had no idea how to call this kind of application other than &ldquo;automation stuff&rdquo; and I had no idea how it would look like.</p>
+
+<p>So I started taking notes and organizing ideas about all this project since then, and I called this &ldquo;Project Triceratops&rdquo;.</p>
+
+<p>Over the years, I did spend some time here and there on this project, but my focus was changing all the time and the general idea of the project was evolving.</p>
+
+<ul>
+<li>2009 - First major attempt in Python + PyQt, using a nice drag &amp; drop modular interface</li>
+<li>2014 - Triceratops.rb - written in Ruby (pretty small experiment really)</li>
+<li>2016 - Triceratops.js - before ES6 (pretty small and sad experiment)</li>
+<li>2016 - Triceratops.ex - written in Elixir, probably the most elegant implementation</li>
+<li>2016 - Triceratops/Trinkets.py - written in Python3.5, this was the most advanced version, the scripts were written in in Coconut</li>
+</ul>
+
+<p>At the end of 2016 I renamed the project to &ldquo;Trinkets&rdquo;.</p>
+
+<ul>
+<li>2017 - Trinkets.js take 2 - using ES6, I spent a lot of time in this one, before I switched to Golang</li>
+<li>2018 - TwoFold.cr - some experiments in Crystal lang (will be re-written to TwoFold.js)</li>
+<li>2018 - Spinal.go - the current implementation</li>
+</ul>
+
+<p>In 2018 I spent a lot of time thinking about the overall directions and I believe the vision of the project has matured.
+Also, instead of 1 app, now there are 3 apps and some helper libraries.</p>
+
+<ol>
+<li>most of the old idea of Triceratops/old Trinkets is now called <a href="https://github.com/ShinyTrinkets/spinal">Spinal 🌀</a></li>
+<li>the template/ translation/ calculator is called <a href="https://github.com/ShinyTrinkets/twofold.js">TwoFold (2✂︎f)</a></li>
+<li>the intelligence engine is called <a href="https://github.com/ShinyTrinkets/zero-f">Zero-f (0-f)</a></li>
+<li><a href="https://github.com/ShinyTrinkets/overseer">Overseer-go</a> is a light process manager library</li>
+</ol>
+
+<p>These applications and libraries working together should accomplish my vision. I hope you&rsquo;re prepared for this: I imagine Trinkets as a <em>distributed, self-healing, self-managing, self-hosted</em> alternative to <em>Siri + Google Now + Alexa</em>, combined with <em>IFTTT + Zapier + Automate.io + Integromat</em> &hellip;</p>
+
+<p>Sure, there are some challenges&hellip; 😄</p>
+
+<p>If you&rsquo;ll look at the code, you&rsquo;ll quickly notice the current implementation is 1 million years far away from how I present it&hellip; There&rsquo;s a huge amount of work to make that happen&hellip;</p>
+
+<p>For this to become reality the way I see it, I roughly estimate it will take me alone 10+ years to implement 😅 &hellip;
+Considering I&rsquo;m already working full time, so I have like 1-3 hours spare time to work on this everyday.
+And of course, I would have to find the time to work everyday.</p>
+
+<p>I already have a huge private blog for the Trinkets projects suite, like I have for all the major projects I was ever part of. I made the first record in April 10, 2016.</p>
+
+<p>Now that the project is matured, I created this public blog to open my ideas around Trinkets suite to the general audience.</p>
+
+<p>Pheeew! I finally explained what&rsquo;s this all about! I want to start writing here more often, I&rsquo;m writing a lot of ideas in private already.</p>
+
+  </div>
+</div>
+<div class="container has-text-centered">
+  
+</div>
+
+<div class="container has-text-centered">
+
+</div>
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://github.com/ShinyTrinkets/">Shiny-Trinkets</a> 2018-2019</p>
+  </div>
+</section>
+
+
+<script type="text/javascript">
+  $('.collapse.expand').click(function(){
+    $('.collapsible.expandable').slideToggle('slow')
+  });
+</script>
+</body>
+</html>
