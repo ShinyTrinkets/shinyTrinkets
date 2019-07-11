@@ -7,10 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/ShinyTrinkets/&#34;&gt;Shiny-Trinkets&lt;/a&gt; 2018-2019</copyright>
-    <lastBuildDate>Wed, 03 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://trinkets.tech/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hello Interneț 🌐</title>
+      <link>https://trinkets.tech/posts/19g11-hello-again/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://trinkets.tech/posts/19g11-hello-again/</guid>
+      <description>Hello again Interneț!
+I just published this blog on the website https://trinkets.tech/ !
+It is powered by the HUGO site generator.
+The posts are still available in the https://github.com/ShinyTrinkets/docs/ repository and you can view the history of all changes.
+I exploded the big &amp;ldquo;captain-log.md&amp;rdquo; file into separate files for each post. I intend to delete the captain-log after some time.
+For the URL of the articles, for the months, I&amp;rsquo;m using letters instead of numbers, like so: A=january, B=february, &amp;hellip; K=november, L=december.</description>
+    </item>
+    
+    <item>
+      <title>Hello, lack of internet 🚫🔌</title>
+      <link>https://trinkets.tech/posts/19g11-no-internet/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://trinkets.tech/posts/19g11-no-internet/</guid>
+      <description>Hello, lack of internet&amp;hellip;
+For some reason I don&amp;rsquo;t have Internet today, so I can&amp;rsquo;t do much&amp;hellip;
+However, it&amp;rsquo;s a blessing, because I realise just how much I depend on it.
+Things that I have offline, so I was prepared:
+ a ton of notes, TODOs, ideas, links to useful resources, saved as Markdown files some articles downloaded with ➹ Clean-mark all the posts for this website and all the history of the changes  Things what I wish I had (more of):</description>
+    </item>
     
     <item>
       <title>High level diagrams 🔩</title>
@@ -128,7 +155,7 @@ I&amp;rsquo;m using a Github repository and not a normal blog post, both because
       
       <guid>https://trinkets.tech/posts/18g30-hello-world/</guid>
       <description>This is my first ever public post regarding the Trinkets projects! Wheee ⭐️ 🎉 !!
-I&amp;rsquo;ll take the time to explain what this Github Organization is about, why I created it.</description>
+I have to take the time to explain what is this thing about, and why I created it.</description>
     </item>
     
   </channel>
