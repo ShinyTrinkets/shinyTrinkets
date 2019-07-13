@@ -1,134 +1,122 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-<link rel="canonical" href="https://trinkets.tech/posts/19f27-elixir/" />
-<link rel="alternate" href="https://trinkets.tech/index.xml" type="application/rss+xml" />
-
-<meta property="og:url" content="https://trinkets.tech/posts/19f27-elixir/" />
-<meta property="og:locale" content="en_GB"><title>Elixir v1.9 🧪 - Trinkets blog and docs</title>
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Elixir v1.9 🧪 - Trinkets blog and docs" />
-<meta property="article:published_time" content="2019-06-27T00:00:00 UTC" />
-<meta property="article:author" content="CroQ" />
-<meta name="description" content="I was really really silent (publicly), for such a long time, wow&hellip;
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://trinkets.tech/posts/19f27-elixir/" />
+    <link rel="alternate" href="https://trinkets.tech/index.xml" type="application/rss+xml" />
+    <meta property="og:url" content="https://trinkets.tech/posts/19f27-elixir/" />
+    <meta property="og:locale" content="en_GB">
+    <title>Elixir v1.9 🧪 - Trinkets blog and docs</title>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Elixir v1.9 🧪 - Trinkets blog and docs" />
+    <meta property="article:published_time" content="2019-06-27T00:00:00 UTC" />
+    <meta property="article:author" content="CroQ" />
+    <meta name="description" content="I was really really silent (publicly), for such a long time, wow&hellip;
 I was quite busy actually, on all the projects. More details will follow.
 What I wanted to write today is: WOOOW, Elixir-lang implemented &ldquo;build release&rdquo; in their latest version !!
 The official blog post: Elixir v1-9-0 released. TL;DR; from the article:
  Releases allow developers to precompile and package all of their code and the runtime into a single unit." />
-
-<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.0/css/all.css" crossorigin="anonymous">
-<script src="//code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="/css/styles.css" />
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.0/styles/zenburn.min.css" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.0/highlight.min.js" crossorigin="anonymous"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
-
-
-
-</head>
-
-<body>
-<div class="container">
-  <nav class="navbar level">
-    <div class="navbar-brand">
-        <a class="nav-item" href="https://trinkets.tech"><h1 class="title is-3">Trinkets blog and docs</h1></a>
-    </div>
-    <div class="navbar-menu has-text-centered is-active">
-        <div class="navbar-end is-centered">
-            
-              <a href="https://trinkets.tech/about" rel="me">
-                <span class="icon">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.0/css/all.css" crossorigin="anonymous">
+    <script src="//code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.0/styles/zenburn.min.css" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.0/highlight.min.js" crossorigin="anonymous"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar level">
+        <div class="navbar-brand">
+          <a class="nav-item" href="https://trinkets.tech">
+            <h1 class="title is-3">Trinkets blog and docs</h1>
+          </a>
+        </div>
+        <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+            <a href="https://trinkets.tech/about" rel="me">
+              <span class="icon">
                   <i class="fas fa-info"></i>
                 </span>
-              </a>
-            
-              <a href="https://github.com/ShinyTrinkets/" rel="me">
-                <span class="icon">
+            </a>
+            <a href="https://github.com/ShinyTrinkets/" rel="me">
+              <span class="icon">
                   <i class="fab fa-github"></i>
                 </span>
-              </a>
-            
-              <a href="https://gitlab.com/ShinyTrinkets/" rel="me">
-                <span class="icon">
+            </a>
+            <a href="https://gitlab.com/ShinyTrinkets/" rel="me">
+              <span class="icon">
                   <i class="fab fa-gitlab"></i>
                 </span>
-              </a>
-            
-              <a href="https://reddit.com/r/ShinyTrinkets/" rel="me">
-                <span class="icon">
+            </a>
+            <a href="https://reddit.com/r/ShinyTrinkets/" rel="me">
+              <span class="icon">
                   <i class="fab fa-reddit"></i>
                 </span>
-              </a>
-            
-         </div>
+            </a>
+          </div>
+        </div>
+      </nav>
     </div>
-  </nav>
-</div>
-
-<div class="container">
-  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">Elixir v1.9 🧪</h1>
-  <div class="content">
-    <p class="subtitle article-subtitle is-6" style="color:#909AA0">
-      By <i class="fas fa-portrait"></i> CroQ
-      on <i class="far fa-calendar-alt"></i> 27 June 2019
-    </p>
-    <article style="margin-top:2rem">
-    <p>I was really really silent (publicly), for such a long time, wow&hellip;</p>
-
-<p>I was quite busy actually, on all the projects. More details will follow.</p>
-
-<p>What I wanted to write today is: WOOOW, <a href="https://elixir-lang.org">Elixir-lang</a> implemented &ldquo;build release&rdquo; in their latest version !!</p>
-
-<p>The official blog post: <a href="https://elixir-lang.org/blog/2019/06/24/elixir-v1-9-0-released/">Elixir v1-9-0 released</a>. TL;DR; from the article:</p>
-
-<blockquote>
-<p>Releases allow developers to precompile and package all of their code and the runtime into a single unit.<br/>
-A release is a self-contained directory that consists of your application code, all of its dependencies, plus the whole Erlang Virtual Machine (VM) and runtime.<br/>
-Code preloading, configuration and customisation, Self-contained, multiple releases, management scripts&hellip;</p>
-</blockquote>
-
-<p>I made a small test with a basic &ldquo;Hello world&rdquo; app in Elixir 1.9. After that, I executed:<br/>
-<code>$ MIX_ENV=prod mix release</code></p>
-
-<p>In the folder &ldquo;_build/prod/rel/&ldquo;, the production app is only <strong>8MB</strong> !! 😱</p>
-
-<p>I uninstalled Elixir and Erlang after compiling the app and I executed:<br/>
-<code>$ _build/prod/rel/kv/bin/kv version</code> and some commands to run the &ldquo;hello&rdquo; function and it worked perfectly. That&rsquo;s why I&rsquo;m so excited about it!</p>
-
-<p>Because one of the most important reasons I stopped using <a href="https://elixir-lang.org">Elixir</a> a few years ago, was that I couldn&rsquo;t find any way to export my app in a portable way, like they just implemented. And the smallest container with Elixir was a few hundred MB. Well, the second reason was the ecosystem was too small, so I had to write a lot of code just to make simple automation stuff, so I switched to Python.</p>
-
-<p>Many things have happened since then&hellip; But I don&rsquo;t regret my decision, now that I&rsquo;m using Go-lang.<br/>
-Even if Go syntax is horrible and Elixir syntax is <em>for sure</em>, the most beautiful thing you could possible write, as a programmer. In my opinion.</p>
-
-    </article>
-  </div>
-</div>
-<div class="container has-text-centered">
-  
-</div>
-
-<div class="container has-text-centered">
-
-</div>
-
-<section class="section">
-  <div class="container has-text-centered">
-    <p>&copy; <a href="https://github.com/ShinyTrinkets/">Shiny-Trinkets</a> 2018-2019</p>
-  </div>
-</section>
-
-<script type="text/javascript">
-  $('.collapse.expand').click(function () {
-    $('.collapsible.expandable').slideToggle('slow')
-  })
-</script>
-</body>
+    <div class="container">
+      <h1 class="subtitle is-size-4-mobile is-size-3-desktop">Elixir v1.9 🧪</h1>
+      <div class="content">
+        <p class="subtitle article-subtitle is-6" style="color:#909AA0">
+          By <i class="fas fa-portrait"></i> CroQ
+          on <i class="far fa-calendar-alt"></i> 27 June 2019
+        </p>
+        <article style="margin-top:2rem">
+          <p>I was really really silent (publicly), for such a long time, wow&hellip;</p>
+          <p>I was quite busy actually, on all the projects. More details will follow.</p>
+          <p>What I wanted to write today is: WOOOW, <a href="https://elixir-lang.org">Elixir-lang</a> implemented &ldquo;build release&rdquo; in their latest version !!</p>
+          <p>The official blog post: <a href="https://elixir-lang.org/blog/2019/06/24/elixir-v1-9-0-released/">Elixir v1-9-0 released</a>. TL;DR; from the article:</p>
+          <blockquote>
+            <p>Releases allow developers to precompile and package all of their code and the runtime into a single unit.<br />
+              A release is a self-contained directory that consists of your application code, all of its dependencies, plus the whole Erlang Virtual Machine (VM) and runtime.<br />
+              Code preloading, configuration and customisation, Self-contained, multiple releases, management scripts&hellip;</p>
+          </blockquote>
+          <p>I made a small test with a basic &ldquo;Hello world&rdquo; app in Elixir 1.9. After that, I executed:<br />
+            <code>$ MIX_ENV=prod mix release</code></p>
+          <p>In the folder &ldquo;_build/prod/rel/&ldquo;, the production app is only <strong>8MB</strong> !! 😱</p>
+          <p>I uninstalled Elixir and Erlang after compiling the app and I executed:<br />
+            <code>$ _build/prod/rel/kv/bin/kv version</code> and some commands to run the &ldquo;hello&rdquo; function and it worked perfectly. That&rsquo;s why I&rsquo;m so excited about it!</p>
+          <p>Because one of the most important reasons I stopped using <a href="https://elixir-lang.org">Elixir</a> a few years ago, was that I couldn&rsquo;t find any way to export my app in a portable way, like they just implemented. And the smallest container with Elixir was a few hundred MB. Well, the second reason was the ecosystem was too small, so I had to write a lot of code just to make simple automation stuff, so I switched to Python.</p>
+          <p>Many things have happened since then&hellip; But I don&rsquo;t regret my decision, now that I&rsquo;m using Go-lang.<br />
+            Even if Go syntax is horrible and Elixir syntax is <em>for sure</em>, the most beautiful thing you could possible write, as a programmer. In my opinion.</p>
+        </article>
+      </div>
+    </div>
+    <div class="container has-text-centered">
+    </div>
+    <div class="container has-text-centered" style="margin-top:2rem">
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        (function() {
+          if (window.location.hostname == "localhost")
+            return;
+          var dsq = document.createElement('script');
+          dsq.type = 'text/javascript';
+          dsq.async = true;
+          dsq.src = 'https://https-trinkets-tech.disqus.com/embed.js';
+          dsq.setAttribute('data-timestamp', +new Date());
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+    <section class="section">
+      <div class="container has-text-centered">
+        <p>&copy; <a href="https://github.com/ShinyTrinkets/">Shiny-Trinkets</a> 2018-2019</p>
+      </div>
+    </section>
+    <script type="text/javascript">
+      $('.collapse.expand').click(function() {
+        $('.collapsible.expandable').slideToggle('slow')
+      })
+    </script>
+  </body>
 </html>

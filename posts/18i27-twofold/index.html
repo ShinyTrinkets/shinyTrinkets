@@ -1,118 +1,110 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-<link rel="canonical" href="https://trinkets.tech/posts/18i27-twofold/" />
-<link rel="alternate" href="https://trinkets.tech/index.xml" type="application/rss+xml" />
-
-<meta property="og:url" content="https://trinkets.tech/posts/18i27-twofold/" />
-<meta property="og:locale" content="en_GB"><title>TwoFold WIP ✂︎ - Trinkets blog and docs</title>
-<meta property="og:type" content="article" />
-<meta property="og:title" content="TwoFold WIP ✂︎ - Trinkets blog and docs" />
-<meta property="article:published_time" content="2018-09-29T00:00:00 UTC" />
-<meta property="article:author" content="CroQ" />
-<meta name="description" content="Wow man, where has this week gone ?! It&rsquo;s already Thursday&hellip;
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://trinkets.tech/posts/18i27-twofold/" />
+    <link rel="alternate" href="https://trinkets.tech/index.xml" type="application/rss+xml" />
+    <meta property="og:url" content="https://trinkets.tech/posts/18i27-twofold/" />
+    <meta property="og:locale" content="en_GB">
+    <title>TwoFold WIP ✂︎ - Trinkets blog and docs</title>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="TwoFold WIP ✂︎ - Trinkets blog and docs" />
+    <meta property="article:published_time" content="2018-09-29T00:00:00 UTC" />
+    <meta property="article:author" content="CroQ" />
+    <meta name="description" content="Wow man, where has this week gone ?! It&rsquo;s already Thursday&hellip;
 I&rsquo;m still working on TwoFold (2✂︎f) v0.2, because v0.1 is not that usable and friendly&hellip;
 I added the option to define you own tag start and end characters to create fancy tags like {{ whatever ? }}, or double tags like [[ whatever &gt;]] ... [[&lt; whatever ]].
 I&rsquo;m passing the parameters that could come from the tags, into the transformer functions." />
-
-<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.0/css/all.css" crossorigin="anonymous">
-<script src="//code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="/css/styles.css" />
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.0/styles/zenburn.min.css" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.0/highlight.min.js" crossorigin="anonymous"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
-
-
-
-</head>
-
-<body>
-<div class="container">
-  <nav class="navbar level">
-    <div class="navbar-brand">
-        <a class="nav-item" href="https://trinkets.tech"><h1 class="title is-3">Trinkets blog and docs</h1></a>
-    </div>
-    <div class="navbar-menu has-text-centered is-active">
-        <div class="navbar-end is-centered">
-            
-              <a href="https://trinkets.tech/about" rel="me">
-                <span class="icon">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.0/css/all.css" crossorigin="anonymous">
+    <script src="//code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.0/styles/zenburn.min.css" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.0/highlight.min.js" crossorigin="anonymous"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar level">
+        <div class="navbar-brand">
+          <a class="nav-item" href="https://trinkets.tech">
+            <h1 class="title is-3">Trinkets blog and docs</h1>
+          </a>
+        </div>
+        <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+            <a href="https://trinkets.tech/about" rel="me">
+              <span class="icon">
                   <i class="fas fa-info"></i>
                 </span>
-              </a>
-            
-              <a href="https://github.com/ShinyTrinkets/" rel="me">
-                <span class="icon">
+            </a>
+            <a href="https://github.com/ShinyTrinkets/" rel="me">
+              <span class="icon">
                   <i class="fab fa-github"></i>
                 </span>
-              </a>
-            
-              <a href="https://gitlab.com/ShinyTrinkets/" rel="me">
-                <span class="icon">
+            </a>
+            <a href="https://gitlab.com/ShinyTrinkets/" rel="me">
+              <span class="icon">
                   <i class="fab fa-gitlab"></i>
                 </span>
-              </a>
-            
-              <a href="https://reddit.com/r/ShinyTrinkets/" rel="me">
-                <span class="icon">
+            </a>
+            <a href="https://reddit.com/r/ShinyTrinkets/" rel="me">
+              <span class="icon">
                   <i class="fab fa-reddit"></i>
                 </span>
-              </a>
-            
-         </div>
+            </a>
+          </div>
+        </div>
+      </nav>
     </div>
-  </nav>
-</div>
-
-<div class="container">
-  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">TwoFold WIP ✂︎</h1>
-  <div class="content">
-    <p class="subtitle article-subtitle is-6" style="color:#909AA0">
-      By <i class="fas fa-portrait"></i> CroQ
-      on <i class="far fa-calendar-alt"></i> 29 September 2018
-    </p>
-    <article style="margin-top:2rem">
-    <p>Wow man, where has this week gone ?! It&rsquo;s already Thursday&hellip;</p>
-
-<p>I&rsquo;m still working on <a href="https://github.com/ShinyTrinkets/twofold.js">TwoFold (2✂︎f)</a> v0.2, because v0.1 is not that usable and friendly&hellip;</p>
-
-<p>I added the option to define you own tag start and end characters to create fancy tags like <code>{{ whatever ? }}</code>, or double tags like <code>[[ whatever &gt;]] ... [[&lt; whatever ]]</code>.</p>
-
-<p>I&rsquo;m passing the parameters that could come from the tags, into the transformer functions. So that works, but I&rsquo;m blocked at parsing those options from the template tags. So if I would have a tag like <code>{{ foo bar=true qaz=1 qwerty=&quot;yes please&quot; }}</code>, I can&rsquo;t parse that so easily with a simple Regex &hellip;</p>
-
-<p>So I&rsquo;m looking at a flexible enough XML / HTML parser. I checked <a href="https://github.com/inikulin/parse5">Parse5</a> (used by <a href="https://github.com/reshape/reshape">Reshape</a>), <a href="https://github.com/fb55/htmlparser2">HtmlParser2</a> (used by <a href="https://github.com/cheeriojs/cheerio">Cheerio</a>) and <a href="https://github.com/marko-js/htmljs-parser">HtmlJs-Parser</a> (used by <a href="https://github.com/marko-js/marko">Marko</a>). And <a href="https://github.com/here-be/snapdragon">Snapdragon</a> (used by <a href="https://github.com/breakdance/breakdance">Breakdance</a>). I kind of worked with all of them one way or the other, but not directly 😁</p>
-
-<p>So I have to evaluate and decide if I&rsquo;ll use one of them, or something else, or implement my own thing.</p>
-
-    </article>
-  </div>
-</div>
-<div class="container has-text-centered">
-  
-</div>
-
-<div class="container has-text-centered">
-
-</div>
-
-<section class="section">
-  <div class="container has-text-centered">
-    <p>&copy; <a href="https://github.com/ShinyTrinkets/">Shiny-Trinkets</a> 2018-2019</p>
-  </div>
-</section>
-
-<script type="text/javascript">
-  $('.collapse.expand').click(function () {
-    $('.collapsible.expandable').slideToggle('slow')
-  })
-</script>
-</body>
+    <div class="container">
+      <h1 class="subtitle is-size-4-mobile is-size-3-desktop">TwoFold WIP ✂︎</h1>
+      <div class="content">
+        <p class="subtitle article-subtitle is-6" style="color:#909AA0">
+          By <i class="fas fa-portrait"></i> CroQ
+          on <i class="far fa-calendar-alt"></i> 29 September 2018
+        </p>
+        <article style="margin-top:2rem">
+          <p>Wow man, where has this week gone ?! It&rsquo;s already Thursday&hellip;</p>
+          <p>I&rsquo;m still working on <a href="https://github.com/ShinyTrinkets/twofold.js">TwoFold (2✂︎f)</a> v0.2, because v0.1 is not that usable and friendly&hellip;</p>
+          <p>I added the option to define you own tag start and end characters to create fancy tags like <code>{{ whatever ? }}</code>, or double tags like <code>[[ whatever &gt;]] ... [[&lt; whatever ]]</code>.</p>
+          <p>I&rsquo;m passing the parameters that could come from the tags, into the transformer functions. So that works, but I&rsquo;m blocked at parsing those options from the template tags. So if I would have a tag like <code>{{ foo bar=true qaz=1 qwerty=&quot;yes please&quot; }}</code>, I can&rsquo;t parse that so easily with a simple Regex &hellip;</p>
+          <p>So I&rsquo;m looking at a flexible enough XML / HTML parser. I checked <a href="https://github.com/inikulin/parse5">Parse5</a> (used by <a href="https://github.com/reshape/reshape">Reshape</a>), <a href="https://github.com/fb55/htmlparser2">HtmlParser2</a> (used by <a href="https://github.com/cheeriojs/cheerio">Cheerio</a>) and <a href="https://github.com/marko-js/htmljs-parser">HtmlJs-Parser</a> (used by <a href="https://github.com/marko-js/marko">Marko</a>). And <a href="https://github.com/here-be/snapdragon">Snapdragon</a> (used by <a href="https://github.com/breakdance/breakdance">Breakdance</a>). I kind of worked with all of them one way or the other, but not directly 😁</p>
+          <p>So I have to evaluate and decide if I&rsquo;ll use one of them, or something else, or implement my own thing.</p>
+        </article>
+      </div>
+    </div>
+    <div class="container has-text-centered">
+    </div>
+    <div class="container has-text-centered" style="margin-top:2rem">
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        (function() {
+          if (window.location.hostname == "localhost")
+            return;
+          var dsq = document.createElement('script');
+          dsq.type = 'text/javascript';
+          dsq.async = true;
+          dsq.src = 'https://https-trinkets-tech.disqus.com/embed.js';
+          dsq.setAttribute('data-timestamp', +new Date());
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+    <section class="section">
+      <div class="container has-text-centered">
+        <p>&copy; <a href="https://github.com/ShinyTrinkets/">Shiny-Trinkets</a> 2018-2019</p>
+      </div>
+    </section>
+    <script type="text/javascript">
+      $('.collapse.expand').click(function() {
+        $('.collapsible.expandable').slideToggle('slow')
+      })
+    </script>
+  </body>
 </html>
