@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/ShinyTrinkets/&#34;&gt;Shiny-Trinkets&lt;/a&gt; 2018-2019</copyright>
-    <lastBuildDate>Thu, 11 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://trinkets.tech/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Software ecosystems: XXIIVV</title>
+      <link>https://trinkets.tech/posts/19g12-software-ecosystems/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://trinkets.tech/posts/19g12-software-ecosystems/</guid>
+      <description>I&amp;rsquo;m fascinated every time I discover an ecosystem of apps and tools that is similar with what I&amp;rsquo;m trying to build here, with Trinkets. I feel excited like I&amp;rsquo;ve encountered an ancient civilization from another dimension, hidden for 1 million years.
+It took me a week to study most of the interesting repositories when I could find some spare time. At first I was totally overwhelmed by the number of weird names (eg: Arvelie, Heol, Indental, Tablatal, Neralie, Oscean) and I thought &amp;ldquo;Maybe it&amp;rsquo;s in Finnish, or maybe Volapük&amp;rdquo;.</description>
+    </item>
     
     <item>
       <title>Hello Interneț 🌐</title>
