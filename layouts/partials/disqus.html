@@ -1,4 +1,4 @@
-<div class="container has-text-centered">
+<div class="container has-text-centered" style="margin-top:2rem">
 {{ if .Site.DisqusShortname }}
   <div id="disqus_thread"></div>
   <script type="text/javascript">
@@ -9,8 +9,8 @@
             return;
 
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        var disqus_shortname = '{{ .Site.DisqusShortname }}';
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        dsq.src = 'https://{{ .Site.DisqusShortname }}.disqus.com/embed.js';
+        dsq.setAttribute('data-timestamp', +new Date());
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
   </script>

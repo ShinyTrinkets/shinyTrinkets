@@ -3,6 +3,7 @@ languageCode = "en"
 title = "Trinkets blog and docs"
 description = "Trinkets blog and docs"
 copyright = "&copy; <a href=\"https://github.com/ShinyTrinkets/\">Shiny-Trinkets</a> 2018-2019"
+disqusShortname = "https-trinkets-tech"
 
 paginate = 5
 
