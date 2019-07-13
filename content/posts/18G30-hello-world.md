@@ -6,4 +6,4 @@ author: CroQ
 
 This is my first ever public post regarding the Trinkets projects! Wheee ⭐️ 🎉 !!
 
-I'll take the time to explain what this thing is about, why I created it.
+I have to take the time to explain what is this thing about, and why I created it.
