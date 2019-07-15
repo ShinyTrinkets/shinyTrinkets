@@ -2,6 +2,8 @@
 title = "About Trinkets"
 date = "2018-08-15"
 menu = "main"
+tags = ["info", "about"]
+description = "Shiny Trinkets, or simply Trinkets is the name of a place to create free and open applications and libraries."
 +++
 
 "Shiny Trinkets" or "Trinkets" is the name of a Organization located on [<i class="fab fa-github"></i> Github](https://github.com/ShinyTrinkets/) and [<i class="fab fa-gitlab"></i> Gitlab](https://gitlab.com/ShinyTrinkets/) - a place to create free & open applications and libraries.

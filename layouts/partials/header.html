@@ -29,6 +29,7 @@
 <script src="//code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="{{ "css/styles.css" | relURL }}" />
 
+{{- if .IsPage -}}
 {{ with .Site.Params.highlight.style }}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.0/styles/{{ . }}.min.css" crossorigin="anonymous" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.0/highlight.min.js" crossorigin="anonymous"></script>
@@ -39,6 +40,7 @@
 <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
 <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
 <script type="text/javascript" src="{{ $scratch.Get "baseURL" }}/js/jssocials.js"></script>
+{{ end }}
 {{ end }}
 {{ .Scratch.Delete "baseURL" }}
 </head>
