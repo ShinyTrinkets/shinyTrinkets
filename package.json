@@ -8,5 +8,9 @@
     "css-build": "node-sass --omit-source-map-url --output-style compressed scss/styles.scss static/css/styles.css",
     "css-watch": "npm run css-build -- --watch",
     "start": "npm run css-watch"
+  },
+  "dependencies": {
+    "glob-fs": "^0.1.7",
+    "pretty": "^2.0.0"
   }
 }
