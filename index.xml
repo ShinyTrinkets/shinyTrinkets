@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Trinkets blog and docs</title>
+    <title>Trinkets tech blog</title>
     <link>https://trinkets.tech/</link>
-    <description>Recent content on Trinkets blog and docs</description>
+    <description>Recent content on Trinkets tech blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/ShinyTrinkets/&#34;&gt;Shiny-Trinkets&lt;/a&gt; 2018-2019</copyright>
@@ -19,11 +19,11 @@
       
       <guid>https://trinkets.tech/posts/19g12-software-ecosystems/</guid>
       <description>I&amp;rsquo;m fascinated every time I discover an ecosystem of apps and tools that is similar with what I&amp;rsquo;m trying to build here, with Trinkets. I feel excited like I&amp;rsquo;ve encountered an ancient civilization from another dimension, hidden for 1 million years.
-It took me a week to study most of the interesting repositories when I could find some spare time. At first I was totally overwhelmed by the number of weird names (eg: Arvelie, Heol, Indental, Tablatal, Neralie, Oscean) and I thought &amp;ldquo;Maybe it&amp;rsquo;s in Finnish, or maybe Volapük&amp;rdquo;.</description>
+It took me a week to study most of the interesting repositories when I could find some spare time. At first I was totally overwhelmed by the number of weird names (eg: Arvelie, Heol, Indental, Tablatal, Neralie, Oscean, Horaire) and I thought &amp;ldquo;Maybe it&amp;rsquo;s in Finnish, or maybe Volapük&amp;rdquo;.</description>
     </item>
     
     <item>
-      <title>Hello Interneț 🌐</title>
+      <title>Hello Interneț</title>
       <link>https://trinkets.tech/posts/19g11-hello-again/</link>
       <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
       
@@ -37,42 +37,42 @@ For the URL of the articles, for the months, I&amp;rsquo;m using letters instead
     </item>
     
     <item>
-      <title>Hello, lack of internet 🚫🔌</title>
+      <title>Hello, lack of internet</title>
       <link>https://trinkets.tech/posts/19g11-no-internet/</link>
       <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://trinkets.tech/posts/19g11-no-internet/</guid>
       <description>Hello, lack of internet&amp;hellip;
-For some reason I don&amp;rsquo;t have Internet today, so I can&amp;rsquo;t do much&amp;hellip;
-However, it&amp;rsquo;s a blessing, because I realise just how much I depend on it.
+For some reason, I don&amp;rsquo;t have Internet today, so I can&amp;rsquo;t do much&amp;hellip;
+However, it&amp;rsquo;s a blessing, because I realize just how much I depend on it.
 Things that I have offline, so I was prepared:
  a ton of notes, TODOs, ideas, links to useful resources, saved as Markdown files some articles downloaded with ➹ Clean-mark all the posts for this website and all the history of the changes  Things what I wish I had (more of):</description>
     </item>
     
     <item>
-      <title>High level diagrams 🔩</title>
+      <title>High level diagrams</title>
       <link>https://trinkets.tech/posts/19g03-diagram/</link>
       <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://trinkets.tech/posts/19g03-diagram/</guid>
       <description>Procrastination and delay are both forms of lazyness. I&amp;rsquo;m fighting my own laziness daily. Sometimes I actually win&amp;hellip;
-In one of my previous posts I promised to publish some diagrams of the Trinkets architecture.
+In one of my previous posts, I promised to publish some diagrams of the Trinkets architecture.
 What I care about at the highest level is the data flow. Inputs and Outputs. All the implementation details are intentionally ignored, so Trinkets is just a &amp;ldquo;black box&amp;rdquo; that you can interact with.
 A User can interact with Trinkets via command line, or via a browser user interface.</description>
     </item>
     
     <item>
-      <title>Decentralized technologies Ⓟ2Ⓟ</title>
+      <title>Ⓟ2Ⓟ Decentralized technologies</title>
       <link>https://trinkets.tech/posts/19g02-decentralized/</link>
       <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://trinkets.tech/posts/19g02-decentralized/</guid>
       <description>I believe decentralized applications are very important and I&amp;rsquo;m not the only one to think that. I&amp;rsquo;ve been watching the P2P and crypto space for years. For me personally, decentralization technologies =equal= freedom. Freedom to choose where you send your data and where you store it. Because if there are no &amp;ldquo;cloud&amp;rdquo; servers, you are in control.
-I want to use P2P network protocols for the Trinkets suite, because there won&amp;rsquo;t be any servers.</description>
+I want to use P2P network protocols for the Trinkets suite because there won&amp;rsquo;t be any servers.</description>
     </item>
     
     <item>
-      <title>Start of July 2019 updates ⚙️</title>
+      <title>️️Start of July 2019 updates</title>
       <link>https://trinkets.tech/posts/19g01-updates/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
       
@@ -81,7 +81,7 @@ I want to use P2P network protocols for the Trinkets suite, because there won&am
     </item>
     
     <item>
-      <title>Elixir v1.9 🧪</title>
+      <title>🧪 Elixir v1.9</title>
       <link>https://trinkets.tech/posts/19f27-elixir/</link>
       <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
       
@@ -94,7 +94,7 @@ The official blog post: Elixir v1-9-0 released. TL;DR; from the article:
     </item>
     
     <item>
-      <title>New job at ScrapingHub 🕸</title>
+      <title>🕸 New job at ScrapingHub</title>
       <link>https://trinkets.tech/posts/18k22-scrapinghub/</link>
       <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
       
@@ -104,7 +104,7 @@ But at the same time, this means I&amp;rsquo;ll have to delay my work on these p
     </item>
     
     <item>
-      <title>TwoFold WIP ✂︎</title>
+      <title>✂︎ TwoFold WIP 2</title>
       <link>https://trinkets.tech/posts/18j07-twofold/</link>
       <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
       
@@ -115,7 +115,7 @@ Unfortunately, I have to work on some personal things these weeks, so I don&amp;
     </item>
     
     <item>
-      <title>TwoFold WIP ✂︎</title>
+      <title>✂︎ TwoFold WIP</title>
       <link>https://trinkets.tech/posts/18i27-twofold/</link>
       <pubDate>Sat, 29 Sep 2018 00:00:00 +0000</pubDate>
       
@@ -127,7 +127,7 @@ I&amp;rsquo;m passing the parameters that could come from the tags, into the tra
     </item>
     
     <item>
-      <title>TwoFold v0.1 🚀 ✂︎</title>
+      <title>🚀 TwoFold v0.1</title>
       <link>https://trinkets.tech/posts/18i22-twofold/</link>
       <pubDate>Sat, 22 Sep 2018 00:00:00 +0000</pubDate>
       
@@ -138,7 +138,7 @@ I have huge hopes for this library, but there&amp;rsquo;s so much to do&amp;hell
     </item>
     
     <item>
-      <title>The history of Trinkets ⭐️ ⚙️</title>
+      <title>⭐️ ⚙️ The history of Trinkets</title>
       <link>https://trinkets.tech/posts/18i18-history/</link>
       <pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate>
       
@@ -160,7 +160,7 @@ This is a (incomplete) list of applications:
     </item>
     
     <item>
-      <title>What is Trinkets ⭐️ ⚙️</title>
+      <title>⭐️ ⚙️ What is Trinkets</title>
       <link>https://trinkets.tech/posts/18h15-what-is-trinkets/</link>
       <pubDate>Wed, 15 Aug 2018 00:00:00 +0000</pubDate>
       
@@ -171,13 +171,24 @@ I&amp;rsquo;m using a Github repository and not a normal blog post, both because
     </item>
     
     <item>
-      <title>Hello world ☀️ 👋</title>
+      <title>☀️ 👋 Hello world</title>
       <link>https://trinkets.tech/posts/18g30-hello-world/</link>
       <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>https://trinkets.tech/posts/18g30-hello-world/</guid>
       <description>This is my first ever public post regarding the Trinkets projects! Wheee ⭐️ 🎉 !!
 I have to take the time to explain what is this thing about, and why I created it.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://trinkets.tech/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trinkets.tech/readme/</guid>
+      <description>Trinkets 📖 blogs and specs 
+Welcome to Shiny Trinkets documents!
+This is work-in-progress. For now you can navigate to blogs/ and read the posts there.</description>
     </item>
     
   </channel>

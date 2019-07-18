@@ -20,6 +20,12 @@
   </url>
   
   <url>
+    <loc>https://trinkets.tech/tags/ecosystems/</loc>
+    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://trinkets.tech/posts/19g11-hello-again/</loc>
     <lastmod>2019-07-11T00:00:00+00:00</lastmod>
   </url>
@@ -30,8 +36,20 @@
   </url>
   
   <url>
+    <loc>https://trinkets.tech/tags/internet/</loc>
+    <lastmod>2019-07-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://trinkets.tech/posts/19g03-diagram/</loc>
     <lastmod>2019-07-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trinkets.tech/tags/spinal/</loc>
+    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -52,6 +70,12 @@
   <url>
     <loc>https://trinkets.tech/posts/18k22-scrapinghub/</loc>
     <lastmod>2018-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trinkets.tech/tags/twofold/</loc>
+    <lastmod>2018-10-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -80,6 +104,18 @@
   </url>
   
   <url>
+    <loc>https://trinkets.tech/tags/about/</loc>
+    <lastmod>2018-08-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trinkets.tech/tags/info/</loc>
+    <lastmod>2018-08-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://trinkets.tech/posts/18h15-what-is-trinkets/</loc>
     <lastmod>2018-08-15T00:00:00+00:00</lastmod>
   </url>
@@ -87,16 +123,6 @@
   <url>
     <loc>https://trinkets.tech/posts/18g30-hello-world/</loc>
     <lastmod>2018-07-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://trinkets.tech/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://trinkets.tech/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>
