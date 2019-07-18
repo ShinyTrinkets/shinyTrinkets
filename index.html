@@ -17,170 +17,28 @@
     <script src="//code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
+  <style>
+    html {
+      margin: 0;
+      width: 99.5%;
+      height: 99.5%;
+    }
+    body {
+      margin: 0;
+      width: 99.5%;
+      height: 99.5%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .ico {
+      font-size: 10em;
+      color: indigo;
+      display: block;
+      animation: fa-spin 10s infinite linear;
+    }
+  </style>
   <body>
-    <div class="container">
-      <nav class="navbar level">
-        <div class="navbar-brand">
-          <a class="nav-item" href="https://trinkets.tech">
-            <h1 class="title is-3">Trinkets tech blog</h1>
-          </a>
-        </div>
-        <div class="navbar-menu has-text-centered is-active">
-          <div class="navbar-end is-centered">
-            <a href="https://trinkets.tech/about" rel="me">
-              <span class="icon">
-                  <i class="fas fa-info"></i>
-                </span>
-            </a>
-            <a href="https://github.com/ShinyTrinkets/" rel="me">
-              <span class="icon">
-                  <i class="fab fa-github"></i>
-                </span>
-            </a>
-            <a href="https://gitlab.com/ShinyTrinkets/" rel="me">
-              <span class="icon">
-                  <i class="fab fa-gitlab"></i>
-                </span>
-            </a>
-            <a href="https://reddit.com/r/ShinyTrinkets/" rel="me">
-              <span class="icon">
-                  <i class="fab fa-reddit"></i>
-                </span>
-            </a>
-          </div>
-        </div>
-      </nav>
-    </div>
-    <main class="container">
-      <h1 class="title is-3">2019</h1>
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">Jul 12</h6>
-        </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://trinkets.tech/posts/19g12-software-ecosystems/">Software ecosystems: XXIIVV</a></h2>
-          <div class="content is-hidden-mobile">
-            I&rsquo;m fascinated every time I discover an ecosystem of apps and tools that is similar with what I&rsquo;m trying to build here, with Trinkets. I feel excited like I&rsquo;ve encountered an ancient civilization from another dimension, hidden for 1 million years.
-            It took me a week to study most of the interesting repositories when I could find some spare time. At first I was totally overwhelmed …
-            <br>
-            <a class="button is-marginless is-paddingless" href="https://trinkets.tech/posts/19g12-software-ecosystems/">
-              <span class="icon-link is-small" style="line-height: 100%">
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-          </span>
-              <p style="padding:0 5px">more</p>
-            </a>
-          </div>
-      </article>
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">Jul 11</h6>
-        </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://trinkets.tech/posts/19g11-no-internet/">Hello, lack of internet</a></h2>
-          <div class="content is-hidden-mobile">
-            Hello, lack of internet&hellip;
-            For some reason, I don&rsquo;t have Internet today, so I can&rsquo;t do much&hellip;
-            However, it&rsquo;s a blessing, because I realize just how much I depend on it.
-            Things that I have offline, so I was prepared:
-            a ton of notes, TODOs, ideas, links to useful resources, saved as Markdown files some articles downloaded with ➹ Clean-mark all the posts for this website …
-            <br>
-            <a class="button is-marginless is-paddingless" href="https://trinkets.tech/posts/19g11-no-internet/">
-              <span class="icon-link is-small" style="line-height: 100%">
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-          </span>
-              <p style="padding:0 5px">more</p>
-            </a>
-          </div>
-      </article>
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">Jul 11</h6>
-        </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://trinkets.tech/posts/19g11-hello-again/">Hello Interneț</a></h2>
-          <div class="content is-hidden-mobile">
-            Hello again Interneț!
-            I just published this blog on the website https://trinkets.tech/ !
-            It is powered by the HUGO site generator.
-            The posts are still available in the https://github.com/ShinyTrinkets/docs/ repository and you can view the history of all changes.
-            I exploded the big &ldquo;captain-log.md&rdquo; file into separate files for each post. I intend to delete the captain-log after some …
-            <br>
-            <a class="button is-marginless is-paddingless" href="https://trinkets.tech/posts/19g11-hello-again/">
-              <span class="icon-link is-small" style="line-height: 100%">
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-          </span>
-              <p style="padding:0 5px">more</p>
-            </a>
-          </div>
-      </article>
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">Jul 3</h6>
-        </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://trinkets.tech/posts/19g03-diagram/">High level diagrams</a></h2>
-          <div class="content is-hidden-mobile">
-            Procrastination and delay are both forms of lazyness. I&rsquo;m fighting my own laziness daily. Sometimes I actually win&hellip;
-            In one of my previous posts, I promised to publish some diagrams of the Trinkets architecture.
-            What I care about at the highest level is the data flow. Inputs and Outputs. All the implementation details are intentionally ignored, so Trinkets is just a &ldquo;black …
-            <br>
-            <a class="button is-marginless is-paddingless" href="https://trinkets.tech/posts/19g03-diagram/">
-              <span class="icon-link is-small" style="line-height: 100%">
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-          </span>
-              <p style="padding:0 5px">more</p>
-            </a>
-          </div>
-      </article>
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">Jul 2</h6>
-        </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://trinkets.tech/posts/19g02-decentralized/">Ⓟ2Ⓟ Decentralized technologies</a></h2>
-          <div class="content is-hidden-mobile">
-            I believe decentralized applications are very important and I&rsquo;m not the only one to think that. I&rsquo;ve been watching the P2P and crypto space for years. For me personally, decentralization technologies =equal= freedom. Freedom to choose where you send your data and where you store it. Because if there are no &ldquo;cloud&rdquo; servers, you are in control.
-            I want to use P2P network …
-            <br>
-            <a class="button is-marginless is-paddingless" href="https://trinkets.tech/posts/19g02-decentralized/">
-              <span class="icon-link is-small" style="line-height: 100%">
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-          </span>
-              <p style="padding:0 5px">more</p>
-            </a>
-          </div>
-      </article>
-    </main>
-    <section class="section">
-      <div class="container">
-        <nav class="level is-mobile">
-          <div class="level-left">
-            <div class="level-item">
-              <a class="button is-rounded" disabled>
-                <span class="icon is-small is-marginless">
-              <i class="fa fa-angle-left"></i>
-            </span>
-                Newer
-              </a>
-            </div>
-          </div>
-          <div class="level-right is-marginless">
-            <div class="level-item">
-              <a class="button is-rounded" href="/page/2/">
-                Older
-                <span class="icon is-small is-marginless">
-              <i class="fa fa-angle-right"></i>
-            </span>
-              </a>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container has-text-centered">
-        <p>&copy; <a href="https://github.com/ShinyTrinkets/">Shiny-Trinkets</a> 2018-2019</p>
-      </div>
-    </section>
+    <a href="/posts/"><i class="ico fas fa-cog fa-10x"></i></a>
   </body>
 </html>
