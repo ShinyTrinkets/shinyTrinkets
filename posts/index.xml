@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/ShinyTrinkets/&#34;&gt;Shiny-Trinkets&lt;/a&gt; 2018-2019</copyright>
-    <lastBuildDate>Fri, 12 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://trinkets.tech/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How this website is built</title>
+      <link>https://trinkets.tech/posts/19g19-this-website/</link>
+      <pubDate>Fri, 19 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://trinkets.tech/posts/19g19-this-website/</guid>
+      <description>A week ago I published all the old blog posts (not that many) on this website.
+Before that, they were only available in the github.com/ShinyTrinkets/docs repository. The repository is still there and you can still see the history of all the changes.
+Initially I just wanted to (eventually) publish some documentation, specs, ideas about the project, but I decided to focus more of the &amp;ldquo;blog posts&amp;rdquo;.
+Technical details about the website The website is powered by the Hugo site generator.</description>
+    </item>
     
     <item>
       <title>Software ecosystems: XXIIVV</title>
@@ -30,7 +42,7 @@ It took me a week to study most of the interesting repositories when I could fin
       <guid>https://trinkets.tech/posts/19g11-hello-again/</guid>
       <description>Hello again Interneț!
 I just published this blog on the website https://trinkets.tech/ !
-It is powered by the HUGO site generator.
+It is powered by the Hugo site generator.
 The posts are still available in the https://github.com/ShinyTrinkets/docs/ repository and you can view the history of all changes.
 I exploded the big &amp;ldquo;captain-log.md&amp;rdquo; file into separate files for each post. I intend to delete the captain-log after some time.
 For the URL of the articles, for the months, I&amp;rsquo;m using letters instead of numbers, like so: A=january, B=february, &amp;hellip; K=november, L=december.</description>

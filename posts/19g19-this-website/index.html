@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://trinkets.tech/posts/19g19-this-website/" />
+    <link rel="alternate" href="https://trinkets.tech/index.xml" type="application/rss+xml" />
+    <meta property="og:url" content="https://trinkets.tech/posts/19g19-this-website/" />
+    <meta property="og:locale" content="en_GB">
+    <title>How this website is built - Trinkets tech blog</title>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="How this website is built - Trinkets tech blog" />
+    <meta property="article:published_time" content="2019-07-19T00:00:00 UTC" />
+    <meta property="article:author" content="CroQ" />
+    <meta name="description" content="A week ago I published all the old blog posts (not that many) on this website.
+Before that, they were only available in the github.com/ShinyTrinkets/docs repository. The repository is still there and you can still see the history of all the changes.
+Initially I just wanted to (eventually) publish some documentation, specs, ideas about the project, but I decided to focus more of the &ldquo;blog posts&rdquo;.
+Technical details about the website The website is powered by the Hugo site generator." />
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.0/css/all.css" crossorigin="anonymous">
+    <script src="//code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.0/styles/zenburn.min.css" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.0/highlight.min.js" crossorigin="anonymous"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar level">
+        <div class="navbar-brand">
+          <a class="nav-item" href="https://trinkets.tech">
+            <h1 class="title is-3">Trinkets tech blog</h1>
+          </a>
+        </div>
+        <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+            <a href="https://trinkets.tech/about" rel="me">
+              <span class="icon">
+                  <i class="fas fa-info"></i>
+                </span>
+            </a>
+            <a href="https://github.com/ShinyTrinkets/" rel="me">
+              <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+            </a>
+            <a href="https://gitlab.com/ShinyTrinkets/" rel="me">
+              <span class="icon">
+                  <i class="fab fa-gitlab"></i>
+                </span>
+            </a>
+            <a href="https://reddit.com/r/ShinyTrinkets/" rel="me">
+              <span class="icon">
+                  <i class="fab fa-reddit"></i>
+                </span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <h1 class="subtitle is-size-4-mobile is-size-3-desktop">How this website is built</h1>
+      <div class="content">
+        <p class="subtitle article-subtitle is-6" style="color:#909AA0">
+          By <i class="fas fa-portrait"></i> CroQ
+          on <i class="far fa-calendar-alt"></i> 19 July 2019
+        </p>
+        <article style="margin-top:2rem">
+          <p>A week ago I published all the old blog posts (not that many) on this website.</p>
+          <p>Before that, they were only available in the <a href="https://github.com/ShinyTrinkets/docs/">github.com/ShinyTrinkets/docs</a> repository.<br />
+            The repository is still there and you can still see the history of all the changes.</p>
+          <p>Initially I just wanted to (eventually) publish some documentation, specs, ideas about the project, but I decided to focus more of the &ldquo;blog posts&rdquo;.</p>
+          <h3 id="technical-details-about-the-website">Technical details about the website</h3>
+          <p>The website is powered by the <a href="https://gohugo.io/">Hugo</a> site generator. Its role is to convert the Markdown files that I&rsquo;m using to write these posts, inject them in some HTML templates and generate a ton of HTML.</p>
+          <p>The website source code available in the <a href="https://github.com/ShinyTrinkets/shinyTrinkets/">github.com/ShinyTrinkets/shinyTrinkets</a> repository.<br />
+            Everything about ShinyTrinkets is open source.</p>
+          <p>💡IDEA :: <em>I think I should rename the repositories, to represent more of what they actually do</em>&hellip;</p>
+          <p>I use 2 branches to organize the source templates and the actual generated HTML. The <code>master</code> branch contains the source and the <code>gh-pages</code> contain the HTML. This is due to a &ldquo;feature&rdquo;? or &ldquo;limitation&rdquo;? of Github.<br />
+            But I can&rsquo;t complain. The hosting is free, so thank you <a href="https://github.com/"><i class="fab fa-github"></i> Github</a>!</p>
+          <p>The current theme is a fork of <a href="https://github.com/natarajmb/charaka-hugo-theme">Charaka theme</a>. I liked the initial look &amp; feel, but my code is now pretty different and I&rsquo;ll change it even more.</p>
+          <p>I&rsquo;m pretty happy with the stack so far. I used Jekyll in the past, but Hugo seems to be a little more flexible. Plus I like that I don&rsquo;t have to update the Ruby dependencies that Jekyll uses, because Hugo is just a single executable.</p>
+          <h3 id="todos">TODOs</h3>
+          <p>There&rsquo;s still a ton of things to do to make this website nicer.</p>
+          <ul>
+            <li>find a nice and readable font for the posts. I think the current one is not that readable (I think it&rsquo;s &ldquo;Domine&rdquo;)</li>
+            <li>Like, Dislike and Comment should be hosted somewhere not Disqus, even if I like them</li>
+            <li>basic site analytics, just to see what pages were visited and how many times</li>
+            <li>I need that logo &hellip;</li>
+            <li>I need to improve the layout of the pages</li>
+            <li>need to read more about Hugo, to use the functionality already available</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+    <div class="container has-text-centered">
+    </div>
+    <div class="container has-text-centered" style="margin-top:2rem">
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        (function() {
+          if (window.location.hostname == "localhost")
+            return;
+          var dsq = document.createElement('script');
+          dsq.type = 'text/javascript';
+          dsq.async = true;
+          dsq.src = 'https://https-trinkets-tech.disqus.com/embed.js';
+          dsq.setAttribute('data-timestamp', +new Date());
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+    <section class="section">
+      <div class="container has-text-centered">
+        <p>&copy; <a href="https://github.com/ShinyTrinkets/">Shiny-Trinkets</a> 2018-2019</p>
+      </div>
+    </section>
+    <script type="text/javascript">
+      $('.collapse.expand').click(function() {
+        $('.collapsible.expandable').slideToggle('slow')
+      })
+    </script>
+  </body>
+</html>
