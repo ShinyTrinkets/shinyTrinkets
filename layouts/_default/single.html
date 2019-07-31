@@ -4,23 +4,23 @@
 <body>
 {{ partial "nav" . }}
 <div class="container">
-  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">{{ .Title }}</h1>
-  <div class="content">
-    <p class="subtitle article-subtitle is-6" style="color:#909AA0">
+  <article class="content">
+    <h1 class="subtitle is-size-4-mobile is-size-3-desktop">{{ .Title }}</h1>
+    <h6 class="subtitle article-subtitle is-6">
       By <i class="fas fa-portrait"></i> {{ .Site.Author.name }}
       on <i class="far fa-calendar-alt"></i> {{ .Date.Format "2 January 2006" }}
-    </p>
-    <article style="margin-top:2rem">
-    {{ .Content }}
-    </article>
-  </div>
+    </h6>
+    <div id="content-body">
+      {{ .Content }}
+    </div>
+  </article>
 </div>
 {{ partial "jsshare" . }}
 {{ partial "disqus" . }}
 {{ partial "footer" . }}
 <script type="text/javascript">
   $('.collapse.expand').click(function () {
-    $('.collapsible.expandable').slideToggle('slow')
+    $(this).next('.collapsible.expandable').slideToggle('slow')
   })
 </script>
 </body>

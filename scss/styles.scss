@@ -1,33 +1,41 @@
 @charset "utf-8";
 
-// Overrider bulma defaults
+@import url('https://rsms.me/inter/inter.css');
+
+// Initial bulma variables
 $grey-darker: #584029;
 $dark: #584029;
-$grey-lighter: #f8f1e3;
-$light:#f8f1e3;
+$grey-lighter: #f9f7f1;
+$light:#f9f7f1;
 $blue: #760411;
 $cyan: #b8ab99;
-$device: 320px;
 
+$gap: 64px;
+$desktop: 860px+(2 * $gap);
+$device: 320px;
+$mobile: 479px;
+$fullhd-enabled: false;
+$widescreen-enabled: false;
+
+// Derived bulma variables
 $primary: $grey-darker;
 $link: $blue;
 $link-hover: #202020;
 $pre-background: $grey-lighter;
-$family-sans-serif: "Domine", Georgia, serif;
+$family-sans-serif: 'Inter', sans-serif;
 $body-background-color: $grey-lighter;
 $navbar-background-color: $grey-lighter;
-$navbar-item-hover-background-color: $cyan;
 $button-background-color: $grey-lighter;
 $button-border-color: $cyan;
 $button-hover-border-color: $grey-darker;
 $button-disabled-border-color: $grey-darker;
 $button-focus-box-shadow-color: transparent;
 
-$gap: 64px;
-$fullhd-enabled: false;
-$desktop: 860px + (2 * $gap);
-$widescreen-enabled: false;
-$mobile: 479px;
+@supports (font-variation-settings: normal) {
+    html {
+        font-family: 'Inter var', sans-serif;
+    }
+}
 
 @import "../node_modules/bulma/bulma.sass";
 
@@ -36,9 +44,32 @@ html {
     clear: both;
 }
 
-body{
-    line-height: 1.5;
-    padding: 2em 2em;
+body {
+    padding: 1em 1em;
+    font-kerning: normal;
+    font-variant-ligatures: contextual common-ligatures;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $dark;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+h2 {
+    font-weight: 800;
+}
+
+h5,
+h6 {
+    font-weight: 200;
 }
 
 .icon {
@@ -48,36 +79,30 @@ body{
 
 .button {
     &:active:not([disabled]) {
-        top:1px;
+        top: 1px;
     }
 }
 
 .container {
     justify-content: center;
 
-    h1 {
-        font-size: 1.8em;
-        color: $link;
-    }
-
-    h6 {
-        font-size: 1em;
-        padding-right: 2em;
-        color: $dark;
-    }
-
-    h2 {
-        font-size: 1.8em;
-        color: $dark;
-    }
-
     .navbar {
         padding: 3rem 0rem;
+
+        h1.title {
+            color: $link;
+            font-size: 3em;
+            font-weight: 700;
+            letter-spacing: -.03em;
+            margin-left: -.05em;
+        }
+
         .navbar-brand {
             margin-left: 0;
             align-items: center;
             justify-content: center;
         }
+
         .navbar-menu {
             box-shadow: 0 0 0;
             padding: 1em 0;
@@ -86,8 +111,64 @@ body{
 }
 
 .content {
-    h1, h2, h3, h4, h5, h6 {
-        font-weight: normal;
+
+    /* Aligns to 72px */
+    h1 {
+        color: #000;
+        font-size: 30px;
+        letter-spacing: -0.021em;
+        line-height: 42px;
+        margin-bottom: 24px;
+        padding-top: 6px;
+    }
+
+    /* Aligns to 72px */
+    h2 {
+        color: #000;
+        font-size: 24px;
+        letter-spacing: -0.019em;
+        line-height: 34px;
+        margin-bottom: 12px;
+        padding-top: 24px;
+    }
+
+    /* Aligns to 48px */
+    h3 {
+        color: #000;
+        font-size: 20px;
+        letter-spacing: -0.017em;
+        line-height: 28px;
+        margin-bottom: 6px;
+        padding-top: 12px;
+    }
+
+    /* Align to 36px */
+    h4 {
+        font-size: 18px;
+        letter-spacing: -0.014em;
+        line-height: 25px;
+        padding-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* Align to 36px */
+    h5 {
+        color: $dark;
+        font-size: 17px;
+        letter-spacing: -0.013em;
+        line-height: 24px;
+        margin-bottom: 9px;
+        padding-top: 12px;
+    }
+
+    /* Align to 36px */
+    h6 {
+        color: $dark;
+        font-size: 16px;
+        letter-spacing: -0.011em;
+        line-height: 22px;
+        margin-bottom: 3px;
+        padding-top: 9px;
     }
 
     blockquote {
@@ -96,18 +177,18 @@ body{
         border-radius: 5px;
     }
 
-    code {
-        border-radius: 5px;
-    }
-
     pre {
-        padding: 1.25em 0;
-        code {
-            border-radius: 5px;
-        }
+        padding-left: 1em;
+        border-radius: 5px;
+        border: 1px solid #3f3f3f;
+        background-color: #444;
     }
 
-    :not(pre) > code {
+    .hljs {
+        background-color: transparent;
+    }
+
+    :not(pre)>code {
         display: inline !important;
         padding: .2em;
     }
@@ -115,23 +196,24 @@ body{
     .button {
         color: $link;
         border: 0px;
+
         &:hover {
             color: $link-hover;
         }
     }
 }
 
-#share {
-  padding: 1.5em 0;
+#content-body {
+    padding: 1em 0 1em 0;
+
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: -0.0143em;
+        line-height: 1.55;
+    }
 }
 
-// hugo content display fix
-.hugo-figure {
-  img {
-      display: block;
-      margin: 0.7rem auto;
-      border-radius: 5px;
-      object-fit: cover;
-      border: 1px $cyan solid;
-  }
+#content-body #share {
+    padding: 1em 0;
 }

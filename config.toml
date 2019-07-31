@@ -5,7 +5,7 @@ description = "Trinkets - Technical blog and docs"
 copyright = "&copy; <a href=\"https://github.com/ShinyTrinkets/\">Shiny-Trinkets</a> 2018-2019"
 disqusShortname = "https-trinkets-tech"
 
-paginate = 5
+paginate = 8
 
 [author]
   name = "CroQ"
